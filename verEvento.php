@@ -5,11 +5,11 @@
   $item = "id";
   $valor = $_POST["idEvento"];
   $evento = ControladorEventos::ctrMostrarEventos($item, $valor);
+ 
+?> 
 
-?>  
-
+<!-- Hola -->
   <main id="main" class="main-page">
-
     <!-- ======= Speaker Details Sectionn ======= -->
     <section id="speakers-details">
       <div class="container">
