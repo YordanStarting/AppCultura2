@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                         <?php } } ?>
-                        <h1>MOSTRAR BOLETOS DEL USUARIO.</h1>
+                        <h1>MOSTRAR BOLETOS DEL CLIENTE.</h1>
                     </div>
                 </div>
             </center>

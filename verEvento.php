@@ -8,7 +8,6 @@
  
 ?> 
 
-<!-- Hola -->
   <main id="main" class="main-page">
     <!-- ======= Speaker Details Sectionn ======= -->
     <section id="speakers-details">
