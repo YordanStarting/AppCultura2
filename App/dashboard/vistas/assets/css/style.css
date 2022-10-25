@@ -1,0 +1,155 @@
+#sidebar a{
+  background-color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#sidebar a:hover, a:active, a:focus {
+  color: #CB0F0F;
+  outline: none;
+  text-decoration: none;
+}
+
+#sidebar i {
+  color: #FFFFFF;
+  text-decoration: #CB0F0F;
+  transition: 0.5s;
+}
+
+.menucol
+{
+color:#FFFFFF;
+}
+.logoUno {
+  color: #F70801;
+  font-size: 36px;
+  
+}
+.logoDos {
+  /* color: #FFFFFF; */
+  color: #F70801;
+  font-size: 36px;
+}
+
+.centrar {
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+
+.centrarAvatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  align-items: center;
+}
+.sombraLink{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+  margin: auto;
+  padding: 30px 5px 10px 10px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.botonOff {
+  padding: 0px 0px 0px 0px;
+  color: #02aec4;
+  font-size: 24px;
+}
+
+.botonOff:hover {
+  color: #ff1616;
+  font-size: 24px;
+}
+
+.botonEditar {
+  padding: 0px 0px 0px 0px;
+  color: #02aec4;
+  font-size: 22px;
+}
+
+.botonEditar:hover {
+  color: #09E51C;
+  font-size: 22px;
+}
+
+
+.tituloLink{
+  font-size: 20px;
+  color: #545454;
+  font-weight: 700;
+  padding: 0px 30px 0px 0px;
+}
+
+.sombraCar{
+ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
+}
+
+.sobraCrearLink{
+ box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.separador {
+   padding: 0px 30px 0px 0px;
+}
+
+.colorBorde {
+  border-radius: 0px;
+  background: #02aec4;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.colorBorde:hover{
+   opacity: 0.6;
+   font-size: 20px;
+   color: #ffffff;
+}
+
+.linkCliente a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.linkCliente a:hover {
+  color: #0E9704;
+  text-decoration: none;
+}
+
+.tamaño {
+  font-size: 14px;
+}
+
+.btn-perfil {
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 7px 10px 7px 10px;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px #00000010;
+  border: 0;
+  transition: opacity 0.3s, background 0.3s;
+  width: 100%;
+}
+
+.btn-perfil:hover {
+  opacity: 0.6;
+}
+
+.botonCamara {
+  padding: 0px 5px 10px 10px;
+  color: #02aec4;
+  font-size: 24px;
+}
+
+.botonCamara:hover {
+  color: #09E51C;
+  font-size: 24px;
+}
+
+.linkHistorialZize {
+ font-size: 12px;
+}
+

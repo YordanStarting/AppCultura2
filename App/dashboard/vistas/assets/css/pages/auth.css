@@ -1,0 +1,21 @@
+body{background-color:#2C2C2C}
+#auth{height:100vh;overflow-x:hidden}
+#auth .auth-colorBtn{background: #CB0F0F; border: 2px solid #F70801;} 
+#auth .auth-colorBtn:hover{color: #CB0F0F; background: #FFFFFF; border: 2px solid #CB0F0F;} 
+#auth #auth-right{height:100%;background:url(../../images/bg/4853433.jpg),linear-gradient(90deg,#F72929,#CB0F0F)}
+#auth #auth-left{padding:3rem 4rem}
+#auth #auth-left .auth-title{font-size:1.5rem;margin-bottom:1rem; color: #FFFFFF;}
+#auth #auth-left .auth-subtitle{font-size:1.3rem;line-height:1.5rem;color:#a8aebb}
+#auth #auth-left .auth-logo{margin-bottom:3rem}
+#auth a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#auth a:hover, a:active, a:focus {
+  color: #CB0F0F;
+  outline: none;
+  text-decoration: none;
+}
+
