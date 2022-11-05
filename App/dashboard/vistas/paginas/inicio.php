@@ -48,10 +48,35 @@
                                     </div>
                                 </div>
                             </div>
+                        <?php } } if($us == "cliente"){ 
+                            
+                            $item = 'idUsuario';
+                            $valor = $usuario["id"];
+                            $eventos2 = ControladorEventos::ctrMostrarEventosInd2($item, $valor);
+
+                            foreach ($eventos2 as $key => $value2) {
+
+                            ?>
+
+                            <div class="col-6">
+                                <div class="card" style="width: 28rem;">
+                                <br>
+                              <h4 class="card-title">
+                                <?php  echo $value2["nombreEvento"]; ?></p>
+                              </h4>
+                                <p class="card-text">No. <?php  echo $value2["id"]; ?><br>
+                                <?php  echo $value2["categoria"]; ?><br>
+                                Entradas: <?php echo $value2["cantidad"]; ?><br>
+                                $<?php  $val = $value2["valor"]; echo number_format($val) ; ?><br><br>
+                                <?php  echo $value2["fechaEvento"]; ?></p>
+                            
+                                </div>
+                            </div>
+
+
                         <?php } } ?>
-                        <h1>MOSTRAR BOLETOS DEL CLIENTE.</h1>
                     </div>
-                </div>
+                </div> 
             </center>
         </div>
     </section>

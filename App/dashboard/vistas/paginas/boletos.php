@@ -4,6 +4,7 @@
 <?php
 
   $us = $usuario["rol"];
+  $nombre = $usuario["nombre"];
 
   if ($us == "cliente") {
     $item = 'idUsuario';
@@ -29,6 +30,7 @@ $boletos = ControladorEventos::ctrMostrarBoletos($item, $valor,$us);
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h3>Lista de boletos</h3>
+                    <h4><?php echo $nombre; ?></h4>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
@@ -56,7 +58,6 @@ $boletos = ControladorEventos::ctrMostrarBoletos($item, $valor,$us);
               <thead>
                 <tr>
                   <th>N°</th>
-                  <th>Usuario</th>
                   <th>Evento</th>
                   <th>Categoria</th>
                   <th>Cantidad</th>
@@ -70,8 +71,7 @@ $boletos = ControladorEventos::ctrMostrarBoletos($item, $valor,$us);
          
            <?php foreach ($boletos as $key => $value): ?>
                  <tr>
-                  <th><?php echo($key+1); ?></th>
-                  <td><?php echo $value["idUsuario"]?></td> 
+                  <th><?php echo($key+1); ?></th>               
                   <td><?php echo $value["idEvento"]?></td>
                   <td><?php echo $value["categoria"]?></td>
                   <td><?php echo $value["cantidad"]?></td>

@@ -169,6 +169,19 @@ class ControladorEventos
         $respuesta = ModeloEventos::mdlMostrarEventosIndex($tabla, $item, $valor);
         return $respuesta;
     }
+
+        /*=============================================
+	Mostrar Boletos Index Dashboard Cliente
+==============================================*/
+static public function ctrMostrarEventosInd2($item, $valor)
+{
+
+    $tabla1 = "eventos";
+    $tabla2 = "ordencompra";
+    $respuesta = ModeloEventos::mdlMostrarEventosInd2($tabla1, $tabla2, $item, $valor);
+    return $respuesta;
+}
+
     /*=============================================
 	Mostrar Eventos Todos Actuales
 ==============================================*/

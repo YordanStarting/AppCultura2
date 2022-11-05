@@ -164,7 +164,7 @@ static public function mdlEditarEvento($tabla, $datos){
 
 
 /*=============================================
-	Mostrar Eventos
+	Mostrar Eventos Dashboard Admin
 ==============================================*/
 
 static public function mdlMostrarEventosInd($tabla, $item, $valor){
@@ -176,6 +176,23 @@ static public function mdlMostrarEventosInd($tabla, $item, $valor){
 		return $stmt -> fetch();
 	}else{
 		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+		$stmt -> execute();
+		return $stmt -> fetchAll();
+	}
+	$stmt = session_write_close().	
+	$stmt = null;
+}
+
+/*=============================================
+	Mostrar Eventos Dashboard Cliente
+==============================================*/
+
+static public function mdlMostrarEventosInd2($tabla1, $tabla2, $item, $valor){
+	
+	if($item != null && $valor != null){
+		$hoy = date('Y-m-d');
+		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla1 INNER JOIN $tabla2 on $tabla1.id = $tabla2.idEvento  WHERE fechaEvento >= '$hoy' AND $item = :val ");
+		$stmt->bindParam(":val", $valor, PDO::PARAM_STR);
 		$stmt -> execute();
 		return $stmt -> fetchAll();
 	}
