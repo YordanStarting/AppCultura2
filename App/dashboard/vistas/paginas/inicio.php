@@ -59,15 +59,17 @@
                             ?>
 
                             <div class="col-6">
-                                <div class="card" style="width: 28rem;">
+                                <div class="card border-secondary" style="width: 15rem;">
                                 <br>
+                                <img class="card-img-top" src="vistas/img/usuarios/Logo/Logo_Ticket.jpg" alt="Card image cap">
                               <h4 class="card-title">
                                 <?php  echo $value2["nombreEvento"]; ?></p>
                               </h4>
                                 <p class="card-text">No. <?php  echo $value2["id"]; ?><br>
                                 <?php  echo $value2["categoria"]; ?><br>
                                 Entradas: <?php echo $value2["cantidad"]; ?><br>
-                                $<?php  $val = $value2["valor"]; echo number_format($val) ; ?><br><br>
+                                Valor x persona: $ <?php  $val=$value2["valor"];  $cant=$value2["cantidad"]; echo number_format($val/$cant) ?><br>
+                                Valor total: $<?php  $val = $value2["valor"]; echo number_format($val) ; ?><br><br>
                                 <?php  echo $value2["fechaEvento"]; ?></p>
                             
                                 </div>
