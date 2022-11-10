@@ -35,9 +35,9 @@ $verEventos = ControladorEventos::ctrMostrarEventoID($item, $valor);
                         </div>
                         <br>
                         
-                        <a href="javascript:void(0);" class="botonCamara" ata-bs-toggle="tooltip" title="Cambiar foto de perfil" data-bs-toggle="modal" data-bs-target="#modal" onclick="carga_ajax('perfil', '<?php echo $usuario["id"]; ?>', 'modal','vistas/paginas/modalFoto.php');">
-                            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal">
-                                <b>Cambiar foto</b>
+                        <a href="javascript:void(0);" class="botonCamara" ata-bs-toggle="tooltip" title="Editar foto de evento" data-bs-toggle="modal" data-bs-target="#modal" onclick="carga_ajax('editarEvento', '<?php echo $verEventos["id"]; ?>', 'modal','vistas/paginas/modalFotoEvento.php');">
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modal">
+                                <b>Editar foto</b>
                         </button></a>
                         </div>
                         <!-- <div class="form-group position-relative has-icon-left">
@@ -198,3 +198,24 @@ $verEventos = ControladorEventos::ctrMostrarEventoID($item, $valor);
             </div>
 
     </section>
+
+
+    
+<!--=====================================
+VENTANA MODAL EDITAR IMAGEN DE CLIENTE
+======================================-->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">eKlycs, procesando.....</h4>
+      </div>
+      <div class="modal-body">
+        <h1>eKlycs, procesando.....</h1>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--/modal-->
