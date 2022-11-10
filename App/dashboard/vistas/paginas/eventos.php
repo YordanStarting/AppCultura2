@@ -114,11 +114,11 @@
                                     <span class="input-group-text btn-outline" id="inputGroup-sizing-default">Descripción: </span>
                                     <textarea name="vipDesc" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required=""></textarea>
                                 </div><br><br>
-
+<!-- 
                                 <div class="input-group mb-3">
                                     <span class="input-group-text btn-outline" id="inputGroup-sizing-default">Foto:</span> &nbsp; &nbsp;
                                     <input type="file" name="fotoEve" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                                </div>
+                                </div> -->
                                 <div class="input-group mb-3">
                                     <span class="input-group-text btn-outline" id="inputGroup-sizing-default">Empresa:</span>
                                     &nbsp; &nbsp; <label> <?php echo $verEmp["nombre"]; ?></label>

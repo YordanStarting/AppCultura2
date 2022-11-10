@@ -30,8 +30,8 @@
                         foreach ($eventos as $key => $value) {
                             
                         ?>
-                            <div class="col-6">
-                                <div class="card" style="width: 28rem;">
+                            <div class="col-6"><br>
+                                <div class="card" style="width: 26rem;">
                                     <img src="<?php echo $value["fotoEvento"] ?>" class="card-img-top" alt="..." width="100" height="250">
                                     <div class="card-body">
                                         <h5 class="card-title"><?php echo $value["nombreEvento"] ?></h5>

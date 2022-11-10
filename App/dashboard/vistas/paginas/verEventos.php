@@ -100,7 +100,7 @@ $eventosR -> ctrRegistrarEvento();
                   <td><?php echo $value["vipDesc"]?></td> 
                   <td><?php echo $value["fechaR"]?></td>
                   <td><?php echo $value["nit"]?></td>
-                  <td> <a href=""> <img src="<?php echo $value["fotoEvento"]?>" class="img-fluid me-3" width="150px"> </a></td>
+                  <td><img src="<?php echo $value["fotoEvento"]?>" class="img-fluid me-3" width="150px"></td>
                   <td>
                      <form method="post" action="editarEvento">
                       <input type="hidden" name="idEv" value="<?php echo $value["id"]; ?>">
