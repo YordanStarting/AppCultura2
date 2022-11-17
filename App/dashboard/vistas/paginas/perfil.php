@@ -49,10 +49,11 @@
                                     <p><?php echo $usuario["contenido"];?></p></h6>
                                
                                <div class="my-4">
+                                <p>
                                   <a href="javascript:void(0);" class="botonCamara" ata-bs-toggle="tooltip" title="Cambiar foto de perfil" data-bs-toggle="modal" data-bs-target="#modal" onclick="carga_ajax('perfil', '<?php echo $usuario["id"]; ?>', 'modal','vistas/paginas/modalFoto.php');">
                                       <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"data-bs-target="#modal">
                                       Cambiar foto
-                                    </button></a>
+                                    </button></a></p>
 
                                   <a href="javascript:void(0);" ata-bs-toggle="tooltip" title="Cambiar password de perfil" data-bs-toggle="modal" data-bs-target="#modalPassword" onclick="carga_ajaxPassword('<?php echo $usuario["id"]; ?>', 'modalPassword','vistas/paginas/modalPassword.php');">
                                       <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modalPassword">

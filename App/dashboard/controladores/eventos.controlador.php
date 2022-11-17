@@ -335,6 +335,73 @@ static public function ctrMostrarEventosInd2($item, $valor)
         }
     }
 
+/*=============================================
+	Editar foto de evento
+=============================================*/
+public function ctrEditarFotoEvento(){
+    if(isset($_POST["idEventoImagen"])){
+        $pagina = $_POST["pagina"]; // pagina de retorono
+        if(isset($_FILES["nuevaImagen"]["tmp_name"]) && !empty($_FILES["nuevaImagen"]["tmp_name"])){
+            list($ancho, $alto) = getimagesize($_FILES["nuevaImagen"]["tmp_name"]);
+            $nuevoAncho = 600;
+            $nuevoAlto = 400;
+/*=============================================
+CREAMOS EL DIRECTORIO DONDE VAMOS A GUARDAR LA FOTO DEL USUARIO
+=============================================*/
+            $directorio = "vistas/img/eventos/".$_POST["idEventoImagen"];
+/*=============================================
+PRIMERO PREGUNTAMOS SI EXISTE OTRA IMAGEN EN LA BD Y EL CARPETA
+=============================================*/
+            // if($ruta != ""){
+            // 	unlink($ruta);
+            // }else{
+                if(!file_exists($directorio)){	
+                    mkdir($directorio, 0755);
+                }
+            //}
+
+
+/*=============================================
+DE ACUERDO AL TIPO DE IMAGEN APLICAMOS LAS FUNCIONES POR DEFECTO DE PHP
+=============================================*/
+if($_FILES["nuevaImagen"]["type"] == "image/jpeg"){
+$aleatorio = mt_rand(100,999);
+$ruta = $directorio."/".$aleatorio.".jpg";
+$origen = imagecreatefromjpeg($_FILES["nuevaImagen"]["tmp_name"]);
+$destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
+imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);
+imagejpeg($destino, $ruta);	
+    }else if($_FILES["nuevaImagen"]["type"] == "image/png"){
+        $aleatorio = mt_rand(100,999);
+        $ruta = $directorio."/".$aleatorio.".png";
+        $origen = imagecreatefrompng($_FILES["nuevaImagen"]["tmp_name"]);	
+        $destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);	
+        imagealphablending($destino, FALSE);
+        imagesavealpha($destino, TRUE);		
+        imagecopyresized($destino, $origen, 0, 0, 0, 0, $nuevoAncho, $nuevoAlto, $ancho, $alto);		
+        imagepng($destino, $ruta);
+}else{
+    echo'<div class="alert alert-danger">¡Solo formatos de imagen JPG y/o PNG!</div>';
+    return;
+                        
+        }
+        // final condicion
+        // $rutaApp = ControladorGeneral::ctrRutaApp();
+        $tabla = "eventos";
+        $id = $_POST["idEventoImagen"];
+        $item = "fotoEvento";
+        $valor = $ruta;
+        $respuesta = ModeloEventos::mdlActualizarEvento($tabla, $id, $item, $valor);
+        return $respuesta;
+
+        // if($respuesta == "ok"){
+        //     echo '<script>
+        //     window.location = "'.$rutaApp.''.$pagina.'";
+        // </script>';	
+        // }
+    }
+}
+}
 
 
 

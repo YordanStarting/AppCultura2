@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>Acerca del evento</h2>
-            <p>Camilo no quiere trabajar</p>
+            <p>Acerca de ...</p>
           </div>
           <div class="col-lg-3">
             <h3>Where</h3>
@@ -373,16 +373,16 @@
 
       <div class="gallery-slider swiper">
         <div class="swiper-wrapper align-items-center">
-          <div class="swiper-slide"><a href="assets/img/Bares/Pajara_Art_Bar/1.png" class="gallery-lightbox"><img src="assets/img/Bares/Pajara_Art_Bar/1.png" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/Bares/Pajara_Art_Bar/1-6.png" class="gallery-lightbox"><img src="assets/img/Bares/Pajara_Art_Bar/1-6.png" class="img-fluid" alt=""></a></div>
           <div class="swiper-slide"><a href="assets/img/Bares/Pajara_Art_Bar/2.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Pajara_Art_Bar/2.jpg" class="img-fluid" alt=""></a></div>
           <div class="swiper-slide"><a href="assets/img/Bares/Pajara_Art_Bar/3.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Pajara_Art_Bar/3.jpg" class="img-fluid" alt=""></a></div>
           <div class="swiper-slide"><a href="assets/img/Bares/Pajara_Art_Bar/4.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Pajara_Art_Bar/4.jpg" class="img-fluid" alt=""></a></div>
           <div class="swiper-slide"><a href="assets/img/Bares/Pajara_Art_Bar/5.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Pajara_Art_Bar/5.jpg" class="img-fluid" alt=""></a></div>
           <div class="swiper-slide"><a href="assets/img/Bares/Punto_Bare/1.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Punto_Bare/1.jpg" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="assets/img/Bares/Punto_Bare/2.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Punto_Bare/2.jpg" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="assets/img/Bares/Punto_Bare/3.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Punto_Bare/3.jpg" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="assets/img/Bares/Punto_Bare/4.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Punto_Bare/4.jpg" class="img-fluid" alt=""></a></div>
+          <!-- <div class="swiper-slide"><a href="assets/img/Bares/Punto_Bare/2.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Punto_Bare/2.jpg" class="img-fluid" alt=""></a></div> -->
+          <div class="swiper-slide"><a href="assets/img/Bares/Punto_Bare/3-1.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Punto_Bare/3-1.jpg" class="img-fluid" alt=""></a></div>
           <div class="swiper-slide"><a href="assets/img/Bares/Punto_Bare/5.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Punto_Bare/5.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/Bares/Punto_Bare/4.jpg" class="gallery-lightbox"><img src="assets/img/Bares/Punto_Bare/4.jpg" class="img-fluid" alt=""></a></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>

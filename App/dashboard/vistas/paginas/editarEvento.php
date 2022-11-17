@@ -1,9 +1,3 @@
-<?php
-$item = "id";
-$valor = $_POST['idEv'];
-$verEventos = ControladorEventos::ctrMostrarEventoID($item, $valor);
-?>
-
 
 <div class="page-content">
     <div class="page-title">
@@ -22,7 +16,17 @@ $verEventos = ControladorEventos::ctrMostrarEventoID($item, $valor);
         </div>
     </div>
 
-    <section>
+<?php
+
+$actualizarFoto = new ControladorEventos();
+$actualizarFoto -> ctrEditarFotoEvento();   
+
+$item = "id";
+$valor = $_POST['idEv'];
+$verEventos = ControladorEventos::ctrMostrarEventoID($item, $valor);
+
+?>
+    <section>               
 
         <div class="col-8">
             <div class="card sobraCrearLink">
@@ -31,11 +35,10 @@ $verEventos = ControladorEventos::ctrMostrarEventoID($item, $valor);
                     <div class="card-body">
                         <div class="centrar">
                         <div class="Avatar">
-                            <img src="<?php echo $verEventos["fotoEvento"]; ?>" style="border-radius: 5%">
+                            <img src="<?php echo $verEventos["fotoEvento"]; ?>" style="border-radius: 5%; width: 50%;">
                         </div>
                         <br>
-                        
-                        <a href="javascript:void(0);" class="botonCamara" ata-bs-toggle="tooltip" title="Editar foto de evento" data-bs-toggle="modal" data-bs-target="#modal" onclick="carga_ajax('editarEvento', '<?php echo $verEventos["id"]; ?>', 'modal','vistas/paginas/modalFotoEvento.php');">
+                        <a href="javascript:void(0);" class="botonCamara" ata-bs-toggle="tooltip" title="Editar foto de evento" data-bs-toggle="modal" data-bs-target="#modal" onclick="carga_ajax('inicio', '<?php echo $verEventos["id"]; ?>', 'modal','vistas/paginas/modalFotoEvento.php');">
                             <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modal">
                                 <b>Editar foto</b>
                         </button></a>

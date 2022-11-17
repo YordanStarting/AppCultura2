@@ -11,15 +11,15 @@
 
             <div class="card sobraCrearLink">
                 <div class="card-body"> 
-                     <form method="post" enctype="multipart/form-data">
+                     <form method="post" enctype="multipart/form-data" action="editarEvento">
                             <div class="mb-3">
-                                <label for="formFile" class="form-label">Subir foto</label>
+                                <label for="formFile" class="form-label"><b>Subir foto</b></label>
                                 <input class="form-control" type="file" id="formFile" name="nuevaImagen" required="">
                             </div>
-                            <!-- <input type="hidden" value="<?php echo $_POST["id2"]; ?>" name="idClienteImagen"/>
-                            <input type="hidden" name="pagina" value="<?php echo $_POST["id"]; ?>"> -->
-                            <P><?php echo $_POST["id"]; ?><br>
-                            <?php echo $_POST["id2"]; ?>
+                            <input type="hidden" value="<?php echo $_POST["id2"]; ?>" name="idEventoImagen"/>
+                            <input type="hidden" name="pagina" value="<?php echo $_POST["id"]; ?>">
+                            <input type="hidden" name="idEv" value="<?php echo $_POST["id2"]; ?>">
+                           
                         </P>
                            
                             <input type="submit" class="btn btn-block btn-outline-info btn-lg" value="Editar foto">
